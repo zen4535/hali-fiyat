@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RADIKA-6110S | Fiyat Bilgisi</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: #fafbfc;
+      color: #252d36;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+
+    .fiyat-karti {
+      width: 100%;
+      max-width: 380px;
+      padding: 18px;
+      background: #fff;
+      border: 1px solid #a5adb7;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgb(37 45 54 / 5%);
+    }
+
+    .urun-basligi { padding: 4px 4px 24px; }
+
+    .urun-kodu {
+      margin: 0 0 12px;
+      font-size: clamp(22px, 7.3vw, 30px);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+      overflow-wrap: anywhere;
+    }
+
+    .urun-ebadi {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #f0f1f3;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .fiyat-kutusu {
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #eef0f3;
+    }
+
+    .fiyat-kutusu + .fiyat-kutusu { margin-top: 14px; }
+
+    .pesin {
+      background: #e5f3df;
+      color: #075c30;
+    }
+
+    .fiyat-etiketi {
+      margin: 0 0 8px;
+      font-size: 21px;
+      font-weight: 650;
+      line-height: 1.3;
+    }
+
+    .fiyat-tutari {
+      margin: 0;
+      font-size: clamp(40px, 15vw, 62px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -2px;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .kurus { font-size: 0.68em; }
+    .para-birimi { font-size: 0.6em; letter-spacing: 0; }
+
+    .kdv-notu {
+      margin: 18px 0 0;
+      padding: 16px 4px 2px;
+      border-top: 1px solid #e4e7eb;
+      color: #616b77;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 340px) {
+      .fiyat-karti { padding: 14px; }
+      .fiyat-kutusu { padding: 16px; }
+      .urun-ebadi { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="fiyat-karti" aria-labelledby="urun-kodu">
+    <header class="urun-basligi">
+      <h1 class="urun-kodu" id="urun-kodu">RADIKA-6110S</h1>
+      <span class="urun-ebadi">160 × 230 cm</span>
+    </header>
+
+    <section class="fiyat-kutusu pesin" aria-labelledby="pesin-baslik">
+      <h2 class="fiyat-etiketi" id="pesin-baslik">Peşin Fiyat</h2>
+      <p class="fiyat-tutari">3700<span class="kurus">,90</span> <span class="para-birimi">₺</span></p>
+    </section>
+
+    <section class="fiyat-kutusu" aria-labelledby="taksitli-baslik">
+      <h2 class="fiyat-etiketi" id="taksitli-baslik">Taksitli Fiyat</h2>
+      <p class="fiyat-tutari">4100<span class="kurus">,79</span> <span class="para-birimi">₺</span></p>
+    </section>
+
+    <p class="kdv-notu">Fiyatlarımıza KDV dahildir.</p>
+  </main>
+</body>
+</html>
